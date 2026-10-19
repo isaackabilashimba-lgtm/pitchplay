@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PitchPlay — Entraîne ton oreille au piano</title>
+<meta name="description" content="PitchPlay est un jeu qui entraîne l'oreille musicale au piano : écoute une note, retrouve-la sur le clavier avant qu'elle ne tombe.">
+<!-- Aucune ressource externe : la page ne contacte aucun tiers. -->
+<style>
+  :root{
+    --orange:#FF6A00; --ink:#111111; --muted:#6b6a63;
+    --line:rgba(0,0,0,.12); --bg:#ffffff; --soft:#FFF1E6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#f2f0ed; --muted:#a8a49e; --line:rgba(255,255,255,.16);
+           --bg:#141312; --soft:#2a1d13; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+                   Helvetica,Arial,sans-serif;
+       line-height:1.65;font-size:16px}
+  .wrap{max-width:640px;margin:0 auto;padding:56px 24px 96px}
+  .logo{font-size:30px;font-weight:700;letter-spacing:-.5px;margin:0}
+  .logo span{color:var(--orange)}
+  .icon{width:104px;height:104px;border-radius:24px;display:block;
+        margin:0 0 22px}
+  .tag{font-size:19px;color:var(--muted);margin:6px 0 34px}
+  .card{background:var(--soft);border-radius:18px;padding:20px 22px;
+        margin:28px 0}
+  h2{font-size:17px;font-weight:600;margin:34px 0 8px}
+  ul{padding-left:20px;margin:10px 0}
+  li{margin:6px 0}
+  a{color:var(--orange);text-decoration:underline;
+    text-underline-offset:3px}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);
+         color:var(--muted);font-size:13px}
+  .en{margin-top:64px;padding-top:30px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <img class="icon" src="icon.png" alt="PitchPlay">
+  <h1 class="logo">Pitch<span>Play</span></h1>
+  <p class="tag">Entraîne ton oreille au piano.</p>
+
+  <p>Écoute une note. Retrouve-la sur le clavier avant qu’elle ne tombe.
+  PitchPlay transforme l’entraînement de l’oreille musicale — d’ordinaire
+  aride — en un jeu de réflexes.</p>
+
+  <ul>
+    <li>une gamme de référence avant chaque niveau, pour jouer même sans
+        oreille absolue ;</li>
+    <li>deux modes : notes et mélodies, puis accords ;</li>
+    <li>des manches de plus en plus rapides, 3 vies, des combos ;</li>
+    <li>sept langues, avec les noms de notes propres à chacune ;</li>
+    <li>aucun compte, aucune publicité, aucun traceur.</li>
+  </ul>
+
+  <div class="card">
+    <h2 style="margin-top:0">Aide et contact</h2>
+    <p style="margin-bottom:0">Une question, un bug, une suggestion ?
+    Écris à
+    <a href="mailto:contact.pitchplay@gmail.com">contact.pitchplay@gmail.com</a>.
+    Je réponds à tous les messages.</p>
+  </div>
+
+  <h2>Confidentialité</h2>
+  <p>PitchPlay ne collecte aucune donnée personnelle et n’a aucun serveur.
+  <a href="privacy.html">Lire la politique de confidentialité</a>.</p>
+
+  <div class="en">
+    <h2 style="margin-top:0">In English</h2>
+    <p>PitchPlay trains your musical ear at the piano: hear a note, find it
+    on the keyboard before it falls. No account, no ads, no trackers.</p>
+    <p>Support and contact:
+    <a href="mailto:contact.pitchplay@gmail.com">contact.pitchplay@gmail.com</a>
+    — <a href="privacy.html">Privacy policy</a>.</p>
+  </div>
+
+  <footer>
+    PitchPlay — Isaac Kabila
+  </footer>
+
+</div>
+</body>
+</html>
